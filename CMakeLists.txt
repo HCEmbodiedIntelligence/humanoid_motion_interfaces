@@ -38,6 +38,9 @@ if(BUILD_TESTING)
     TIMEOUT 60
   )
 
+  # Project owner explicitly excludes copyright-policy checks from acceptance.
+  # Keep message generation, CMake and XML checks enabled.
+  set(ament_cmake_copyright_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
 
